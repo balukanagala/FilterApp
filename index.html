@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilterApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</head>
+<body>
+    <h1>FILTER IMAGE APP</h1>
+    <h2>Filter your image here</h2>
+    <fieldset>
+        <legend>Choose an image and a filter</legend>
+        <input type="file" accept="image/*" multiple="false/" id="fileInput" onchange="upload()">
+        <label for="filters">Choose a filter : </label>
+        <select name="filters" id="filters" onchange="Filter()" multiple>
+        <option value="purple">Purple</option>
+        <option value="gray">Gray</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+        <option value="fade">Fade</option>
+        <!-- <option value="nofilter">None</option> -->
+        </select>
+    </fieldset>
+    <button onclick="loadingBar()">APPLY FILTER</button>
+    <div class="main">
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

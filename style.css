@@ -1,0 +1,33 @@
+body{
+    background-color: aqua;
+    font-family: monospace;
+}
+canvas{
+    position: relative;
+    left: 40px;
+    border: 1px solid black;
+    width: 300px;
+    /* height: 300px; */
+    margin: 50px 40px;
+}
+h1{
+    text-align: center;
+    /* text-shadow: 1px ; */
+}
+legend{
+    font-size: 18px;
+}
+button{
+    position: relative;
+    top: 50px;
+    left: 650px;
+}
+.main{
+    /* border: 2px solid black; */
+    /* box-sizing: border-box; */
+    margin: auto;
+    position: absolute;
+    width: 900px;
+    height: 400px;
+    top: 400px; bottom:200px; left: 0; right: 0;
+}
